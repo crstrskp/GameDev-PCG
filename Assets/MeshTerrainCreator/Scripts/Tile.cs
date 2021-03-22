@@ -52,28 +52,28 @@ public class Tile : MonoBehaviour
 
     public Vector2 TileSize { get => tileSize; set => tileSize = value; }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            SpawnSphereAtSideCenters();
-        }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.Space))
+    //     {
+    //         SpawnSphereAtSideCenters();
+    //     }
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            drawTestEdge = !drawTestEdge;
-        }
+    //     if (Input.GetKeyDown(KeyCode.E))
+    //     {
+    //         drawTestEdge = !drawTestEdge;
+    //     }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            i++;
-        }
+    //     if (Input.GetKeyDown(KeyCode.R))
+    //     {
+    //         i++;
+    //     }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            j++;
-        }
-    }
+    //     if (Input.GetKeyDown(KeyCode.T))
+    //     {
+    //         j++;
+    //     }
+    // }
 
     private void SpawnSphereAtSideCenters()
     {

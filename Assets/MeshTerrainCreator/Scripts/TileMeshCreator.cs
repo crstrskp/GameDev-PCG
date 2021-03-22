@@ -171,24 +171,24 @@ public class TileMeshCreator : MonoBehaviour
         tile.EasternEdge = m_easternEdge;
     }
 
-    public void OnDrawGizmos()
-    {
-        for (int x0 = 0; x0 < xSize; x0++)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(m_southernEdge[x0], m_southernEdge[x0 + 1]);
+    // public void OnDrawGizmos()
+    // {
+    //     for (int x0 = 0; x0 < xSize; x0++)
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawLine(m_southernEdge[x0], m_southernEdge[x0 + 1]);
 
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawLine(m_northernEdge[x0], m_northernEdge[x0 + 1]);
-        }
+    //         Gizmos.color = Color.yellow;
+    //         Gizmos.DrawLine(m_northernEdge[x0], m_northernEdge[x0 + 1]);
+    //     }
 
-        for (int x0 = 0; x0 < zSize; x0++)
-        {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawLine(m_easternEdge[x0], m_easternEdge[x0 + 1]);
+    //     for (int x0 = 0; x0 < zSize; x0++)
+    //     {
+    //         Gizmos.color = Color.blue;
+    //         Gizmos.DrawLine(m_easternEdge[x0], m_easternEdge[x0 + 1]);
 
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(m_westernEdge[x0], m_westernEdge[x0 + 1]);
-        }
-    }
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawLine(m_westernEdge[x0], m_westernEdge[x0 + 1]);
+    //     }
+    // }
 }
